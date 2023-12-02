@@ -8,11 +8,14 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
+    <!-- Хедер -->
     <header class="main-header">
+      <!-- Логотип сайта -->
       <a class="main-header__logo logo" href="index.html">
         <img class="logo__image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Кот-супергерой.">
         <img class="logo__text" src="images/icons/logo2.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
+      <!-- Главная навигация-->
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -28,9 +31,51 @@
             <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-        </div>
       </nav>
     </header>
+    <!-- Основное содержимое страницы -->
+    <main class="main-container">
 
+    </main>
+    <!-- Футер -->
+    <footer class="main-footer">
+      <!-- Секция контактов с картой -->
+      <section class="main-footer__contacts contacts">
+        <h2 class="visually-hidden">Контакты.</h2>
+        <div class="contacts__address address">
+          <h3 class="address__title title">Приглашаем к сотрудничеству дилеров!</h3>
+          <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map">
+          <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A287ca1fbac90ef6eb74745daca236be20b5f34b179a218395c70be810c513801&amp;source=constructor" width="320" height="362" title="Карта."></iframe>
+        </div>
+      </section>
+      <!-- Секция-обёртка для ссылок -->
+      <div class="main-footer__links">
+        <img class="main-footer__logo" src="images/icons/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+        <!-- Секция с ссылками на соцсети -->
+        <section class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Копирайт разработчика сайта -->
+        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
