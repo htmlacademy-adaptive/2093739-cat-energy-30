@@ -34,12 +34,12 @@
       </nav>
     </header>
     <main class="main-container">
-      <header class="page-header container">
-        <h1 class="page-header__title page-header__title--form title">Подбор программы</h1>
-        <h2 class="page-header__subtitle title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+      <header class="page-header">
+        <h1 class="page-header__title page-header__title--form">Подбор программы</h1>
+        <p class="page-header__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
       <!-- Форма анкеты для подбора питания -->
-      <form class="programm-choise-form container" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="programm-choise-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="programm-choise-form__wrapper">
           <fieldset class="programm-choise-form__fieldset programm-choise-form__fieldset--input">
             <ul class="programm-choise-form__list">
@@ -75,24 +75,24 @@
           </fieldset>
         </div>
         <fieldset class="programm-choise-form__fieldset programm-choise-form__fieldset--contacts">
-          <legend class="programm-choise-form__legend title">Контактные данные (владельца кота)</legend>
+          <legend class="programm-choise-form__legend">Контактные данные (владельца кота)</legend>
           <ul class="programm-choise-form__list">
             <li class="programm-choise-form__item">
               <label class="programm-choise-form__label" for="email">E-mail:*</label>
-              <input class="programm-choise-form__input" type="email" id="email" name="email" placeholder="Укажите эл.почту" value="kuklachev@gmail.com" required>
+              <input class="programm-choise-form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="programm-choise-form__item">
-              <label class="programm-choise-form__label" for="phone">Имя:*</label>
+              <label class="programm-choise-form__label" for="phone">Телефон:*</label>
               <input class="programm-choise-form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
         <fieldset class="programm-choise-form__fieldset programm-choise-form__fieldset--comments">
-          <legend class="programm-choise-form__legend title">Комментарий</legend>
+          <legend class="programm-choise-form__legend">Комментарий</legend>
           <textarea class="programm-choise-form__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="programm-choise-form__fieldset">
-          <legend class="programm-choise-form__legend title">Дополнительно</legend>
+          <legend class="programm-choise-form__legend">Дополнительно</legend>
           <ul class="programm-choise-form__list">
             <li class="programm-choise-form__item">
               <input class="programm-choise-form__input" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -118,12 +118,13 @@
         </div>
       </form>
     </main>
+    <!-- Футер -->
     <footer class="main-footer">
       <!-- Секция контактов с картой -->
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты.</h2>
         <div class="contacts__address address">
-          <h3 class="address__title title">Приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
           <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="contacts__map">
@@ -132,7 +133,9 @@
       </section>
       <!-- Секция-обёртка для ссылок -->
       <div class="main-footer__links">
-        <img class="main-footer__logo" src="images/icons/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+        <a class="main-footer__logo footer-logo" href="index.html">
+          <img class="footer-logo__image" src="images/icons/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+        </a>
         <!-- Секция с ссылками на соцсети -->
         <section class="main-footer__social social">
           <h2 class="visually-hidden">Наши соцсети.</h2>
@@ -155,7 +158,10 @@
           </ul>
         </section>
         <!-- Копирайт разработчика сайта -->
-        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+          <img class="copyright__logo" src="images/icons/logo-html.svg" width="27" height="34" alt="">
+        </a>
       </div>
     </footer>
   </body>

@@ -38,22 +38,22 @@
       <h1 class="visually-hidden">Магазин функционального питания для котов Cat Energy.</h1>
       <!-- Блок-герой -->
       <section class="hero">
-        <h2 class="hero__title title title--bright">Функциональное<br>питание для котов</h2>
+        <h2 class="hero__title">Функциональное<br>питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <img class="hero__image" src="images/hero-can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy.">
-        <a class="hero__link button button--green" href="#">подобрать программу</a>
+        <a class="hero__link button button--green" href="form.html">подобрать программу</a>
       </section>
       <!-- Программы питания -->
       <section class="feeding-programmes">
         <h2 class="visually-hidden">Программы питания на любой случай.</h2>
         <ul class="feeding-programmes__list">
           <li class="feeding-programmes__item feeding-programmes__item--weight-loss">
-            <h3 class="feeding-programmes__title title">похудение</h3>
+            <h3 class="feeding-programmes__title">похудение</h3>
             <p class="feeding-programmes__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="feeding-programmes__link" href="#">каталог slim</a>
           </li>
           <li class="feeding-programmes__item feeding-programmes__item--mass-gain">
-            <h3 class="feeding-programmes__title title">набор массы</h3>
+            <h3 class="feeding-programmes__title">набор массы</h3>
             <p class="feeding-programmes__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="feeding-programmes__link" href="#">каталог pro</a>
           </li>
@@ -61,7 +61,7 @@
       </section>
       <!-- Особенности продуктов -->
       <section class="features">
-        <h2 class="features__title title">Как это работает</h2>
+        <h2 class="features__title">Как это работает</h2>
         <ol class="features__list">
           <li class="features__item">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="features__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -70,24 +70,26 @@
         </ol>
       </section>
       <!-- Статстика применения продукта с живым слайдером-занавеской -->
-      <section class="live-example container">
+      <section class="live-example">
         <div class="live-example__text-wrapper">
-          <h2 class="live-example__title title">Живой пример</h2>
+          <h2 class="live-example__title">Живой пример</h2>
           <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="live-example__stats">
-            <div class="stats">
-              <dt class="stats__value">5 КГ</dt>
-              <dd class="stats__decription">снижение веса</dd>
+            <div class="live-example__stats-wrapper">
+              <dt class="live-example__stats-value">5 КГ</dt>
+              <dd class="live-example__stats-description">снижение веса</dd>
             </div>
-            <div class="stats">
-              <dt class="stats__value">60 ДНЕЙ</dt>
-              <dd class="stats__decription">затрачено времени</dd>
+            <div class="live-example__stats-wrapper">
+              <dt class="live-example__stats-value">60 ДНЕЙ</dt>
+              <dd class="live-example__stats-description">затрачено времени</dd>
             </div>
           </dl>
           <p class="live-example__expenses">Затраты на питание: <span class="live-example__price">15 000 РУБ.</span></p>
         </div>
         <div class="live-example__slider slider">
           <button class="slider__button-curtain" type="button"></button>
+          <img class="slider__image" src="images/cat-before.png" width="280" height="256" alt="Котик до Cat Energy Slim.">
+          <img class="slider__image" src="images/cat-after.png" width="280" height="256" alt="Котик после Cat Energy Slim.">
         </div>
       </section>
     </main>
@@ -97,7 +99,7 @@
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты.</h2>
         <div class="contacts__address address">
-          <h3 class="address__title title">Приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
           <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="contacts__map">
@@ -106,7 +108,9 @@
       </section>
       <!-- Секция-обёртка для ссылок -->
       <div class="main-footer__links">
-        <img class="main-footer__logo" src="images/icons/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+        <a class="main-footer__logo footer-logo" href="index.html">
+          <img class="footer-logo__image" src="images/icons/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+        </a>
         <!-- Секция с ссылками на соцсети -->
         <section class="main-footer__social social">
           <h2 class="visually-hidden">Наши соцсети.</h2>
@@ -129,7 +133,10 @@
           </ul>
         </section>
         <!-- Копирайт разработчика сайта -->
-        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+          <img class="copyright__logo" src="images/icons/logo-html.svg" width="27" height="34" alt="">
+        </a>
       </div>
     </footer>
   </body>
