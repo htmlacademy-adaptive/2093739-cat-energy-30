@@ -12,8 +12,8 @@
     <header class="main-header">
       <!-- Логотип сайта -->
       <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Кот-супергерой.">
-        <img class="logo__text" src="images/icons/logo2.svg" width="101" height="18" alt="CAT ENERGY.">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Кот-супергерой.">
+        <img class="logo__text" src="images/logo2.svg" width="101" height="18" alt="CAT ENERGY.">
       </a>
       <!-- Главная навигация-->
       <nav class="main-nav">
@@ -40,7 +40,11 @@
       <section class="hero">
         <h2 class="hero__title">Функциональное<br>питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="images/hero-can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy.">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-can-desktop@1x.png 1x, images/hero-can-desktop@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/hero-can-tablet@1x.png 1x, images/hero-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__image" src="images/hero-can-mobile@1x.png" srcset="images/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Банка корма Cat Energy.">
+        </picture>
         <a class="hero__link button button--green" href="form.html">подобрать программу</a>
       </section>
       <!-- Программы питания -->
@@ -87,9 +91,15 @@
           <p class="live-example__expenses">Затраты на питание: <span class="live-example__price">15 000 РУБ.</span></p>
         </div>
         <div class="live-example__slider slider">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Котик до Cat Energy Slim.">
+          </picture>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Котик после Cat Energy Slim.">
+          </picture>
           <button class="slider__button-curtain" type="button"></button>
-          <img class="slider__image" src="images/cat-before.png" width="280" height="256" alt="Котик до Cat Energy Slim.">
-          <img class="slider__image" src="images/cat-after.png" width="280" height="256" alt="Котик после Cat Energy Slim.">
         </div>
       </section>
     </main>
@@ -109,7 +119,7 @@
       <!-- Секция-обёртка для ссылок -->
       <div class="main-footer__links">
         <a class="main-footer__logo footer-logo" href="index.html">
-          <img class="footer-logo__image" src="images/icons/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+          <img class="footer-logo__image" src="images/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
         </a>
         <!-- Секция с ссылками на соцсети -->
         <section class="main-footer__social social">
@@ -135,7 +145,7 @@
         <!-- Копирайт разработчика сайта -->
         <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__logo" src="images/icons/logo-html.svg" width="27" height="34" alt="">
+          <img class="copyright__logo" src="images/logo-html.svg" width="27" height="34" alt="HTML Academy.">
         </a>
       </div>
     </footer>
