@@ -1,0 +1,43 @@
+.feeding-programmes__list {
+  @include list-reset();
+}
+
+.feeding-programmes__item {
+  background-color: $basic-grey;
+}
+
+.feeding-programmes__title {
+  font-family: $font-secondary;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.feeding-programmes__description {
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    color: $black;
+  }
+}
+
+.feeding-programmes__link {
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

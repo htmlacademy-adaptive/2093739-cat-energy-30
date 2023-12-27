@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  font-family: $font-secondary;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  &--green {
+    color: $white;
+    background-color: $basic-green;
+
+    &:hover {
+      background-color: $basic-green-2;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $basic-green-2;
+    }
+  }
+
+  &--grey {
+    color: $special-dark-grey;
+    background-color: $basic-grey;
+
+    &:hover,
+    &:active {
+      background-color: $special-grey;
+    }
+  }
+}
