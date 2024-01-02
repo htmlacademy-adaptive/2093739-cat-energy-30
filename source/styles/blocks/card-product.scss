@@ -1,0 +1,49 @@
+.card-product__link-img,
+.card-product__link-title {
+  text-decoration: none;
+}
+
+.card-product__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &--more {
+    color: $basic-darkgrey;
+    text-align: center;
+  }
+}
+
+.card-product__description-text,
+.card-product__description-value {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--more {
+    text-align: center;
+  }
+}
+
+.card-product__link-order {
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

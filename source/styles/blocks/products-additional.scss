@@ -1,0 +1,49 @@
+.products-additional__list {
+  @include list-reset();
+}
+
+.products-additional__title {
+  font-family: $font-secondary;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.products-additional__gift {
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-mobile@2x.jpg") type("image/jpeg") 2x);
+  background-color: $special-dark-grey;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 290px;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-tablet@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-tablet@2x.jpg") type("image/jpeg") 2x);
+    height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-desktop@2x.jpg") type("image/jpeg") 2x);
+    height: 288px;
+  }
+}
+
+.products-additional__gift-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    text-align: start;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
+}

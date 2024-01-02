@@ -1,0 +1,57 @@
+.live-example {
+  background-color: $special-grey-2;
+}
+
+.live-example__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.live-example__description {
+  color: $special-dark-grey;
+}
+
+.live-example__stats-value {
+  font-family: $font-secondary;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.live-example__stats-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: lowercase;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.live-example__expenses {
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+}

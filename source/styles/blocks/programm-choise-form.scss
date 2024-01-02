@@ -1,0 +1,44 @@
+.programm-choise-form__list {
+  @include list-reset();
+}
+
+.programm-choise-form__label,
+.programm-choise-form__input {
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+}
+
+.programm-choise-form__legend {
+  font-family: $font-secondary;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.programm-choise-form__notification {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+}

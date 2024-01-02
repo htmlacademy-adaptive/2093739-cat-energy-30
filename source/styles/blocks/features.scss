@@ -1,0 +1,19 @@
+.features__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.features__list {
+  @include list-reset();
+}
+
+.features__item {
+  color: $special-dark-grey;
+}
