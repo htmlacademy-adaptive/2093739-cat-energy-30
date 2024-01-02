@@ -39,3 +39,11 @@
     text-align: center;
   }
 }
+
+.card-product__link-order {
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
