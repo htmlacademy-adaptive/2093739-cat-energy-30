@@ -1,5 +1,13 @@
 .copyright {
   text-decoration: none;
+
+  &:hover svg {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -7,4 +15,8 @@
   font-weight: 400;
   line-height: 20px;
   color: $special-dark-grey;
+}
+
+.copyright__logo {
+  color: $basic-grey-2;
 }

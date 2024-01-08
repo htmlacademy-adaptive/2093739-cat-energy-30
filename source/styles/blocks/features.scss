@@ -15,5 +15,37 @@
 }
 
 .features__item {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
   color: $special-dark-grey;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--natural-components::before {
+    background-image: url("../../images/icons/stack.svg#leaf");
+    background-size: 30px 32px;
+  }
+
+  &--easy-recipe::before {
+    background-image: url("../../images/icons/stack.svg#water");
+    background-size: 25px 30px;
+  }
+
+  &--everyday::before {
+    background-image: url("../../images/icons/stack.svg#eat");
+    background-size: 26px 29px;
+  }
+
+  &--fast-results::before {
+    background-image: url("../../images/icons/stack.svg#clock");
+    background-size: 26px 31px;
+  }
 }
