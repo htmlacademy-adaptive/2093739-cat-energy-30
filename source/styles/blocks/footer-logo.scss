@@ -1,3 +1,12 @@
 .footer-logo {
-  text-decoration: none;
+  color: $basic-darkgrey;
+
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
 }

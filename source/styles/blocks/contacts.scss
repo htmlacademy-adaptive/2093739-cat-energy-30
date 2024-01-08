@@ -1,7 +1,22 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__address {
-  background-color: $basic-grey;
+  background-color: $white;
 
   @media (min-width: $desktop) {
-    background-color: $white;
+    position: absolute;
+    top: 95px;
+  }
+}
+
+.contacts__iframe {
+  width: 100%;
+  height: 362px;
+  border: none;
+
+  @media (min-width: $tablet) {
+    height: 400px;
   }
 }
