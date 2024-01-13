@@ -1,3 +1,19 @@
+.programm-choise-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.programm-choise-form__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .programm-choise-form__list {
   @include list-reset();
 }

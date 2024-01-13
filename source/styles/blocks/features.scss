@@ -12,6 +12,18 @@
 
 .features__list {
   @include list-reset();
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .features__item {
@@ -19,6 +31,10 @@
   grid-template-columns: min-content 1fr;
   gap: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
 
   &::before {
     content: "";
