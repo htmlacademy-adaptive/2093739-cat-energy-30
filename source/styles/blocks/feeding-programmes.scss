@@ -1,12 +1,39 @@
-.feeding-programmes__list {
-  @include list-reset();
+.feeding-programmes {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+.feeding-programmes__list {
+  @include list-reset();
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+
 .feeding-programmes__item {
+  padding: 30px 20px 18px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet) {
+    padding: 77px 63px 53px 52px;
+  }
 }
 
 .feeding-programmes__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
   font-family: $font-secondary;
   font-size: 24px;
   font-weight: 400;
@@ -14,20 +41,90 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      left: auto;
+      top: 15px;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      transform: initial;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform: translateY(-50%);
+  }
+
+  &--weight-loss::after {
+    position: absolute;
+    content: "";
+    top: calc(50% - 3px);
+    left: 7px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      left: auto;
+      top: 3px;
+      right: 30px;
+      width: 140px;
+      height: 194px;
+      transform: initial;
+    }
+  }
+
+  &--mass-gain::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -8px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../images/icons/stack.svg#cat-pro");
+    background-position: center;
   }
 }
 
 .feeding-programmes__description {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 22px;
   color: $special-dark-grey;
+  border-bottom: 1px #d9d9d9 solid;
 
   @media (min-width: $tablet) {
+    width: 340px;
     color: $black;
+    border: none;
   }
 }
 
 .feeding-programmes__link {
+  display: block;
+  margin-top: 19px;
+  margin-bottom: 4px;
   font-family: $font-secondary;
   font-size: 16px;
   font-weight: 400;

@@ -1,3 +1,24 @@
 .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
+
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  display: block;
+}
+
+.logo__text {
+  display: block;
 }

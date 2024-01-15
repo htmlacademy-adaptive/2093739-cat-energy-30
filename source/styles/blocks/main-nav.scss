@@ -1,5 +1,13 @@
+.main-nav__toggle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
 .main-nav__list {
   @include list-reset();
+  display: none;
 }
 
 .main-nav__item {
@@ -23,6 +31,12 @@
 .main-nav__link {
   color: $black;
   text-decoration: none;
+
+  &--white {
+    @media (min-width: $desktop) {
+      color: $white;
+    }
+  }
 
   &:hover {
     opacity: 0.6;
