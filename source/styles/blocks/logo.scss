@@ -1,5 +1,4 @@
 .logo {
-  height: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,4 +13,12 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.logo__image {
+  display: block;
+}
+
+.logo__text {
+  display: block;
 }

@@ -7,6 +7,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 63px 80px;
+  }
 }
 
 .products-main__item {

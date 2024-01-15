@@ -1,7 +1,10 @@
-.main-footer__links {
+.main-footer {
+  background-color: $basic-grey;
+}
+
+.main-footer__container {
   display: flex;
   flex-direction: column;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet) {
     flex-direction: row;
