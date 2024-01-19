@@ -1,4 +1,5 @@
 .footer-logo {
+  display: block;
   color: $basic-darkgrey;
 
   &:hover,
@@ -9,4 +10,8 @@
   &:active {
     color: #6b6b6b;
   }
+}
+
+.footer-logo__image {
+  display: block;
 }

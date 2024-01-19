@@ -1,3 +1,7 @@
+.features {
+  padding-bottom: 49px;
+}
+
 .features__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -9,6 +13,7 @@
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -20,7 +25,8 @@
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 37px 137px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop) {
@@ -31,11 +37,14 @@
 .features__item {
   display: grid;
   grid-template-columns: min-content 1fr;
+  align-items: center;
   gap: 20px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 31px;
   }
 
   &::before {
@@ -45,6 +54,11 @@
     background-color: $basic-green;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--natural-components::before {
@@ -54,16 +68,16 @@
 
   &--easy-recipe::before {
     background-image: url("../../images/icons/stack.svg#water");
-    background-size: 25px 30px;
+    background-size: 27px 29px;
   }
 
   &--everyday::before {
     background-image: url("../../images/icons/stack.svg#eat");
-    background-size: 26px 29px;
+    background-size: 26px 30px;
   }
 
   &--fast-results::before {
     background-image: url("../../images/icons/stack.svg#clock");
-    background-size: 26px 31px;
+    background-size: 27px 31px;
   }
 }

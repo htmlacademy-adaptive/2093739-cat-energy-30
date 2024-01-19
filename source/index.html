@@ -29,21 +29,23 @@
           </picture>
         </a>
         <!-- Главная навигация-->
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--white" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--white" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--white" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active main-nav__link--white" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--white" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--white" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <!-- Блок-герой -->
@@ -81,7 +83,7 @@
       <section class="features container">
         <h2 class="features__title">Как это работает</h2>
         <ol class="features__list">
-          <li class="features__item features__item--natural-components">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="features__item features__item--natural-components">Функциональное питание содержит&nbsp;только полезные питательные вещества.</li>
           <li class="features__item features__item--easy-recipe">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="features__item features__item--everyday">Замените один-два приема обычной еды на наше функциональное питание.</li>
           <li class="features__item features__item--fast-results">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
@@ -105,14 +107,18 @@
           <p class="live-example__expenses">Затраты на питание: <span class="live-example__price">15 000 РУБ.</span></p>
         </div>
         <div class="live-example__slider slider">
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" width="560" height="512">
-            <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Котик до Cat Energy Slim.">
-          </picture>
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" width="560" height="512">
-            <img class="slider__image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Котик после Cat Energy Slim.">
-          </picture>
+          <div class="slider__before">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x" width="560" height="512">
+              <img src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Котик до Cat Energy Slim."">
+            </picture>
+          </div>
+          <div class="slider__after">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x" width="560" height="512">
+              <img src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Котик после Cat Energy Slim.">
+            </picture>
+          </div>
           <button class="slider__button-curtain" type="button">
             <span class="visually-hidden">Занавеска.</span>
           </button>
@@ -125,7 +131,7 @@
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты.</h2>
         <div class="contacts__address address">
-          <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
           <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" title="Карта."></iframe>

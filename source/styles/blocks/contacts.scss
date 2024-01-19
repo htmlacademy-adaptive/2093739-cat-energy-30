@@ -4,8 +4,7 @@
 
 .contacts__address {
   background-color: $white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 26px 20px;
 
   @media (min-width: $tablet) {
     padding-left: 70px;
@@ -23,6 +22,7 @@
 }
 
 .contacts__iframe {
+  display: block;
   width: 100%;
   height: 362px;
   border: none;

@@ -1,4 +1,10 @@
+.address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .address__title {
+  margin: 0;
   font-family: $font-secondary;
   font-size: 16px;
   font-weight: 400;

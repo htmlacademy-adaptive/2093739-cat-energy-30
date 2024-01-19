@@ -1,5 +1,10 @@
 .social__list {
   @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
 }
 
 .social__link {
