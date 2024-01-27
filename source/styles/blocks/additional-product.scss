@@ -1,5 +1,6 @@
 .additional-product {
-  padding: 10px;
+  padding-top: 13px;
+  padding-bottom: 18px;
 }
 
 .additional-product__link {
@@ -7,6 +8,8 @@
 }
 
 .additional-product__title {
+  margin-top: 0;
+  margin-bottom: 14px;
   font-family: $font-secondary;
   font-size: 16px;
   font-weight: 400;
@@ -20,15 +23,27 @@
   }
 }
 
+.additional-product__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
 .additional-product__description-volume,
 .additional-product__description-price {
   font-size: 14px;
-  line-height: 20px;
   font-weight: 400;
+  line-height: 14px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.additional-product__link-order {
+  padding: 10px 50px;
 }

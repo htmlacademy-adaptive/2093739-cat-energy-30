@@ -20,6 +20,7 @@
   }
 
   &--more {
+    position: relative;
     background: $white;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
@@ -29,6 +30,29 @@
     @media (min-width: $tablet) {
       padding-top: 242px;
     }
+  }
+
+  &--more::after,
+  &--more::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: #d3d3d3;
+  }
+
+  &--more::before {
+    top: 39px;
+    width: 30px;
+    height: 2px
+  }
+
+  &--more::after {
+    top: 25px;
+    width: 2px;
+    height: 30px
   }
 }
 
