@@ -3,6 +3,11 @@
     padding-top: 2px;
     padding-right: 4px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 4px;
+    padding-right: 0;
+  }
 }
 
 .main-nav--no-js .main-nav__toggle {

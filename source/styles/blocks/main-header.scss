@@ -5,7 +5,13 @@
     content: "";
     position: absolute;
     top: 65px;
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero-background-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/hero-background-mobile@2x.jpg") type("image/jpeg") 2x);
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/hero-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/hero-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/hero-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/hero-background-mobile@2x.jpg") type("image/jpeg") 2x
+    );
     background-color: $special-dark-grey;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +27,13 @@
       content: "";
       top: 0;
       left: 50%;
-      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero-background-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/hero-background-desktop@2x.jpg") type("image/jpeg") 2x);
+      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/hero-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/hero-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/hero-background-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/hero-background-desktop@2x.jpg") type("image/jpeg") 2x
+        );
       background-color: $white;
       background-position: left top;
       width: 50%;
@@ -40,6 +52,11 @@
   @media (min-width: $tablet) {
     padding-top: 25px;
     padding-bottom: 0;
+    align-items: initial;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 55px;
   }
 }
 
@@ -50,5 +67,10 @@
   @media (min-width: $tablet) {
     width: 174px;
     height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 202px;
+    height: 59px;
   }
 }

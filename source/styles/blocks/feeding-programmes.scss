@@ -6,6 +6,11 @@
     padding-top: 0;
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 82px;
+    padding-bottom: 71px;
+  }
 }
 
 .feeding-programmes__list {
@@ -48,8 +53,15 @@
   @media (min-width: $tablet) {
     margin-bottom: 24px;
     padding-left: 1px;
+    padding-right: 250px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+    padding-right: 0;
   }
 
   &::before {
@@ -72,6 +84,12 @@
       width: 200px;
       height: 200px;
       transform: initial;
+    }
+
+    @media (min-width: $desktop) {
+      top: 55%;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -99,6 +117,14 @@
       height: 194px;
       transform: initial;
     }
+
+    @media (min-width: $desktop) {
+      top: 13px;
+      left: 15px;
+      right: auto;
+      width: 70px;
+      height: 97px;
+    }
   }
 
   &--mass-gain::after {
@@ -114,10 +140,18 @@
     @media (min-width: $tablet) and (max-width: 1439px) {
       left: auto;
       top: 15px;
-      right: -40px;
+      right: -34px;
       width: 268px;
       height: 200px;
       transform: initial;
+    }
+
+    @media (min-width: $desktop) {
+      top: 17px;
+      left: -20px;
+      right: auto;
+      width: 134px;
+      height: 56px;
     }
   }
 }
@@ -126,14 +160,19 @@
   margin: 0;
   padding-top: 0;
   padding-bottom: 22px;
-  width: 240px;
   color: $special-dark-grey;
   border-bottom: 1px #d9d9d9 solid;
 
   @media (min-width: $tablet) {
-    width: 340px;
+    padding-right: 250px;
+    width: 100%;
     color: $black;
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -155,12 +194,26 @@
     content: "";
     width: 32px;
     height: 12px;
-    background-image: url("../../images/icons/stack.svg#arrow");
+    background-image: url("../../images/icons/stack.svg#arrow2");
     background-position: right 8px center;
     background-repeat: no-repeat;
   }
 
   &:hover::after {
     background-position: right center;
+  }
+
+  @media (min-width: $tablet) {
+    gap: 25px;
+    margin-top: 26px;
+    margin-bottom: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 25px;
   }
 }

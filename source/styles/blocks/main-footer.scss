@@ -27,7 +27,7 @@
 
   @media (min-width: $tablet) {
     margin: 0;
-    margin-right: 160px;
+    margin-right: auto;
   }
 
 }
@@ -38,6 +38,7 @@
 
   @media (min-width: $tablet) {
     margin: 0;
+    margin-left: auto;
     width: 168px;
   }
 }
@@ -50,7 +51,7 @@
   border-bottom: 1px #d9d9d9 solid;
 
   @media (min-width: $tablet) {
-    margin-right: auto;
+    margin-left: 37px;
     padding-top: 8px;
     padding-bottom: 7px;
     max-width: 132px;

@@ -1,4 +1,18 @@
+.page-header {
+  padding-top: 27px;
+  padding-bottom: 40px;
+  border-top: 1px #d9d9d9 solid;
+  border-bottom: 1px $special-grey solid;
+
+  @media (min-width: $tablet) {
+    padding-top: 63px;
+    padding-bottom: 84px;
+    border: none;
+  }
+}
+
 .page-header__title {
+  margin: 0;
   font-family: $font-secondary;
   font-size: 36px;
   font-weight: 400;

@@ -1,10 +1,14 @@
 .address {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
 }
 
 .address__title {
   margin: 0;
+  width: 130px;
   font-family: $font-secondary;
   font-size: 16px;
   font-weight: 400;
@@ -19,13 +23,21 @@
 }
 
 .address__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 140px;
   font-size: 14px;
   font-style: normal;
   line-height: 20px;
   color: $special-dark-grey;
+  text-align: left;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
+    width: 160px;
+    text-align: right;
   }
 }
+

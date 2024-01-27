@@ -1,4 +1,14 @@
 .hero {
+  @media (min-width: $tablet) {
+    min-height: 873px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 579px;
+  }
+}
+
+.hero__container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -7,16 +17,15 @@
   padding-top: 27px;
 
   @media (min-width: $tablet) {
-    padding-top: 63px;
-    padding-left: 120px;
     justify-content: start;
     align-items: start;
-    min-height: 873px;
+    padding-top: 63px;
+    padding-left: 120px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 110px;
-    min-height: 580px;
+    padding-top: 109px;
+    padding-left: 190px;
   }
 }
 
@@ -68,8 +77,8 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 264px;
-    left: 30px;
+    top: 201px;
+    right: 29px;
     z-index: -1;
     margin-bottom: 0;
   }

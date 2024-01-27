@@ -1,5 +1,14 @@
 .features {
   padding-bottom: 49px;
+
+  @media (min-width: $tablet) and (max-width: 1439px) {
+    padding-bottom: 46px;
+    border-bottom: 1px #e6e6e6 solid;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .features__title {
@@ -24,27 +33,33 @@
   gap: 20px;
 
   @media (min-width: $tablet) {
-    grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
-    padding-top: 40px;
+    grid-template-columns: 250px 250px;
+    gap: 37px 135px;
+    counter-reset: li;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .features__item {
+  position: relative;
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
   gap: 20px;
   color: $special-dark-grey;
+  counter-increment: li 1;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     gap: 31px;
+    padding-top: 40px;
+    align-items: flex-start;
+    min-height: 280px;
   }
 
   &::before {
@@ -79,5 +94,24 @@
   &--fast-results::before {
     background-image: url("../../images/icons/stack.svg#clock");
     background-size: 27px 31px;
+  }
+
+
+  &::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      content: counter(li);
+      font-family: $font-secondary;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      color: $basic-grey;
+    }
+  }
+
+  &:first-child::after {
+    right: 25px;
   }
 }
