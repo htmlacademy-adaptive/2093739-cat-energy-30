@@ -9,6 +9,11 @@
     padding-bottom: 84px;
     border: none;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 73px;
+    padding-bottom: 84px;
+  }
 }
 
 .page-header__title {

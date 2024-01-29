@@ -19,9 +19,9 @@
 }
 
 .programm-choise-form__item {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  column-gap: 13px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .programm-choise-form__label,
@@ -49,6 +49,7 @@
 
 .programm-choise-form__input {
   &--text {
+    flex-grow: 1;
     height: 45px;
   }
 }

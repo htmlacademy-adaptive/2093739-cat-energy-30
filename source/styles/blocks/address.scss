@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-
 }
 
 .address__title {
@@ -38,6 +36,10 @@
     line-height: 20px;
     width: 160px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
   }
 }
 

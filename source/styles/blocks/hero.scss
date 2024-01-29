@@ -77,7 +77,7 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 201px;
+    top: 264px;
     right: 29px;
     z-index: -1;
     margin-bottom: 0;
@@ -90,7 +90,7 @@
 }
 
 .hero__link {
-  width: 280px;
+  width: 100%;
   padding: 10px 44px;
 
   @media (min-width: $tablet) {
