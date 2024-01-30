@@ -25,7 +25,7 @@
   }
 }
 
-.main-nav--closed .main-nav__wrapper{
+.main-nav--closed .main-nav__wrapper {
   @media (max-width: $mobile) {
     display: none;
   }
@@ -97,11 +97,9 @@
   border-top: 1px #e6e6e6 solid;
 
   @media (min-width: $tablet) {
-
     .main-nav__item:last-child {
     border-bottom: 1px #e6e6e6 solid;
     }
-
   }
 
 

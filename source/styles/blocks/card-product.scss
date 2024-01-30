@@ -195,20 +195,20 @@
 }
 
 .card-product__description-text--more {
-    margin-top: 8px;
-    margin-bottom: 21px;
-    text-align: center;
+  margin-top: 8px;
+  margin-bottom: 21px;
+  text-align: center;
 
-    @media (min-width: $tablet) {
-      margin-top: 23px;
-      margin-bottom: 82px;
-      line-height: 18px;
-    }
+  @media (min-width: $tablet) {
+    margin-top: 23px;
+    margin-bottom: 82px;
+    line-height: 18px;
+  }
 
-    @media (min-width: $desktop) {
-      margin-top: 25px;
-      margin-bottom: 89px;
-    }
+  @media (min-width: $desktop) {
+    margin-top: 25px;
+    margin-bottom: 89px;
+  }
 }
 
 .card-product__link-order {
