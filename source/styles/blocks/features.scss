@@ -1,3 +1,16 @@
+.features {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) and (max-width: 1439px) {
+    padding-bottom: 46px;
+    border-bottom: 1px #e6e6e6 solid;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+  }
+}
+
 .features__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -9,6 +22,7 @@
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -19,23 +33,33 @@
   gap: 20px;
 
   @media (min-width: $tablet) {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 250px 250px;
+    gap: 37px 135px;
+    counter-reset: li;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .features__item {
+  position: relative;
   display: grid;
   grid-template-columns: min-content 1fr;
+  align-items: center;
   gap: 20px;
   color: $special-dark-grey;
+  counter-increment: li 1;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 31px;
+    padding-top: 40px;
+    align-items: flex-start;
+    min-height: 280px;
   }
 
   &::before {
@@ -45,6 +69,11 @@
     background-color: $basic-green;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--natural-components::before {
@@ -54,16 +83,35 @@
 
   &--easy-recipe::before {
     background-image: url("../../images/icons/stack.svg#water");
-    background-size: 25px 30px;
+    background-size: 27px 29px;
   }
 
   &--everyday::before {
     background-image: url("../../images/icons/stack.svg#eat");
-    background-size: 26px 29px;
+    background-size: 26px 30px;
   }
 
   &--fast-results::before {
     background-image: url("../../images/icons/stack.svg#clock");
-    background-size: 26px 31px;
+    background-size: 27px 31px;
+  }
+
+
+  &::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      content: counter(li);
+      font-family: $font-secondary;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      color: $basic-grey;
+    }
+  }
+
+  &:first-child::after {
+    right: 25px;
   }
 }

@@ -3,31 +3,59 @@
 }
 
 .contacts__address {
-  background-color: $white;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: $basic-grey;
+  padding: 26px 20px;
 
   @media (min-width: $tablet) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 61px 70px;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 95px;
-    left: 110px;
-    padding-left: 70px;
-    padding-right: 70px;
+    left: calc(50% - 610px);
+    padding-left: 80px;
+    padding-right: 74px;
     width: 565px;
+    background-color: $white;
+  }
+
+  &--index {
+    background-color: $white;
+  }
+}
+
+.contacts__map {
+  height: 362px;
+  background-image:
+    image-set(url("../../images/map-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/map-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/map-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/map-mobile@2x.jpg") type("image/jpeg") 2x);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+    background-image:
+      image-set(url("../../images/map-tablet@1x.webp") type("image/webp") 1x,
+      url("../../images/map-tablet@2x.webp") type("image/webp") 2x,
+      url("../../images/map-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/map-tablet@2x.jpg") type("image/jpeg") 2x);
+  }
+
+  @media (min-width: $desktop) {
+    background-image:
+      image-set(url("../../images/map-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/map-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/map-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/map-desktop@2x.jpg") type("image/jpeg") 2x);
   }
 }
 
 .contacts__iframe {
+  display: block;
   width: 100%;
-  height: 362px;
+  height: 100%;
   border: none;
-
-  @media (min-width: $tablet) {
-    height: 400px;
-  }
 }

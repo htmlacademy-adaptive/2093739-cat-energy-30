@@ -1,0 +1,35 @@
+.title-section {
+  position: relative;
+  width: fit-content;
+  font-family: $font-secondary;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: $white;
+  box-shadow: -20px 0 0 $white, 20px 0 0 $white;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    box-shadow: -40px 0 0 $white, 40px 0 0 $white;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
+    box-shadow: 100vw 0 0 $basic-green;
+
+    @media (min-width: $tablet) {
+      top: 22px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 23px;
+    }
+  }
+}

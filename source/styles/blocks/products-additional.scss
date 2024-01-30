@@ -1,60 +1,136 @@
-.products-additional__list {
-  @include list-reset();
+.products-additional {
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 76px;
+    padding-bottom: 87px;
+  }
 }
 
 .products-additional__title {
-  font-family: $font-secondary;
-  font-size: 24px;
-  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 35px;
   line-height: 24px;
 
   @media (min-width: $tablet) {
-    font-size: 36px;
-    line-height: 36px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 79px;
+    margin-left: 0;
+  }
+}
+
+.products-additional__wrapper {
+  display: grid;
+  row-gap: 34px;
+
+  @media (min-width: $tablet) {
+    row-gap: 69px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+}
+
+.products-additional__list {
+  @include list-reset();
+  display: grid;
+
+  @media (min-width: $tablet) and (max-width: 1339px) {
+    border-left: 1px #cdcdcd solid;
+    border-right: 1px #cdcdcd solid;
+  }
+}
+
+.products-additional__item {
+  border-bottom: 1px #cdcdcd solid;
+
+  &:first-child {
+    border-top: 1px #cdcdcd solid;
   }
 }
 
 .products-additional__gift {
-  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-mobile@2x.jpg") type("image/jpeg") 2x);
+  padding-top: 59px;
+  height: 290px;
+  background-image:
+    linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/gift-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/gift-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/gift-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/gift-background-mobile@2x.jpg") type("image/jpeg") 2x);
   background-color: $special-dark-grey;
   background-repeat: no-repeat;
   background-position: top;
-  height: 290px;
 
   @media (min-width: $tablet) {
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-tablet@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-tablet@2x.jpg") type("image/jpeg") 2x);
+    padding-top: 57px;
+    padding-right: 125px;
+    padding-left: 77px;
     height: 200px;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-tablet@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-tablet@2x.jpg") type("image/jpeg") 2x);
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-desktop@2x.jpg") type("image/jpeg") 2x);
+    padding-top: 59px;
+    padding-right: 0;
+    padding-left: 0;
+    position: 0;
     height: 288px;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-desktop@2x.jpg") type("image/jpeg") 2x);
   }
 }
 
 .products-additional__gift-text {
+  margin: 0;
   display: flex;
   flex-direction: column;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: $white;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
 
   &::before {
     content: "";
+    margin-bottom: 48px;
     width: 78px;
     height: 80px;
     background-image: url("../../images/icons/stack.svg#gift");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+      width: 80px;
+      height: 82px;
+    }
   }
 
   @media (min-width: $tablet) {
+    flex-direction: row;
     text-align: start;
+    margin: 0 auto;
+    max-width: 506px;
   }
 
   @media (min-width: $desktop) {
+    flex-direction: column;
+    gap: 46px;
     text-align: center;
   }
 }

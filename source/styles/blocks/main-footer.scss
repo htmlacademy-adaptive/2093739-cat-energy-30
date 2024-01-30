@@ -5,9 +5,55 @@
 .main-footer__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+
+.main-footer__logo {
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    margin-right: auto;
+  }
+}
+
+.main-footer__copyright {
+  width: 280px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    margin-left: auto;
+    width: 168px;
+  }
+}
+
+.main-footer__social {
+  padding-top: 19px;
+  padding-bottom: 20px;
+  width: 100%;
+  border-top: 1px #d9d9d9 solid;
+  border-bottom: 1px #d9d9d9 solid;
+
+  @media (min-width: $tablet) {
+    margin-left: 37px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    max-width: 132px;
+    border: none;
   }
 }

@@ -1,6 +1,16 @@
 .feeding-programmes {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 82px;
+    padding-bottom: 71px;
+  }
 }
 
 .feeding-programmes__list {
@@ -41,9 +51,17 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    padding-left: 0;
+    margin-bottom: 24px;
+    padding-left: 1px;
+    padding-right: 250px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+    padding-right: 0;
   }
 
   &::before {
@@ -57,15 +75,21 @@
     background-color: $basic-green;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50%;
+    border-radius: 100%;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) and (max-width: 1439px) {
       left: auto;
       top: 15px;
       right: 0;
       width: 200px;
       height: 200px;
       transform: initial;
+    }
+
+    @media (min-width: $desktop) {
+      top: 55%;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -85,25 +109,50 @@
     background-image: url("../../images/icons/stack.svg#cat-slim");
     background-position: center;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) and (max-width: 1439px) {
       left: auto;
-      top: 3px;
+      top: 4px;
       right: 30px;
       width: 140px;
       height: 194px;
       transform: initial;
+    }
+
+    @media (min-width: $desktop) {
+      top: 13px;
+      left: 15px;
+      right: auto;
+      width: 70px;
+      height: 97px;
     }
   }
 
   &--mass-gain::after {
     position: absolute;
     content: "";
+    left: -7px;
     top: 50%;
-    left: -8px;
     width: 67px;
     height: 50px;
     background-image: url("../../images/icons/stack.svg#cat-pro");
     background-position: center;
+
+    @media (min-width: $tablet) and (max-width: 1439px) {
+      left: auto;
+      top: 15px;
+      right: -34px;
+      width: 268px;
+      height: 200px;
+      transform: initial;
+    }
+
+    @media (min-width: $desktop) {
+      top: 17px;
+      left: -20px;
+      right: auto;
+      width: 134px;
+      height: 56px;
+    }
   }
 }
 
@@ -115,14 +164,22 @@
   border-bottom: 1px #d9d9d9 solid;
 
   @media (min-width: $tablet) {
-    width: 340px;
+    padding-right: 250px;
+    width: 100%;
     color: $black;
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
 .feeding-programmes__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-top: 19px;
   margin-bottom: 4px;
   font-family: $font-secondary;
@@ -133,8 +190,30 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &::after {
+    content: "";
+    width: 32px;
+    height: 12px;
+    background-image: url("../../images/icons/stack.svg#arrow2");
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-position: right center;
+  }
+
   @media (min-width: $tablet) {
+    gap: 25px;
+    margin-top: 26px;
+    margin-bottom: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 25px;
   }
 }

@@ -1,4 +1,38 @@
+.page-header {
+  padding-top: 27px;
+  padding-bottom: 40px;
+  border-top: 1px #d9d9d9 solid;
+  border-bottom: 1px $special-grey solid;
+
+  @media (min-width: $tablet) {
+    padding-top: 63px;
+    padding-bottom: 84px;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 73px;
+    padding-bottom: 84px;
+  }
+
+  &--form {
+    border-bottom: none;
+    padding-bottom: 66px;
+
+    @media (min-width: $tablet) {
+      padding-right: 70px;
+      padding-left: 70px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 110px;
+      padding-left: 110px;
+    }
+  }
+}
+
 .page-header__title {
+  margin: 0;
   font-family: $font-secondary;
   font-size: 36px;
   font-weight: 400;
@@ -11,6 +45,8 @@
 }
 
 .page-header__subtitle {
+  margin-top: 37px;
+  margin-bottom: 0;
   font-family: $font-secondary;
   font-size: 14px;
   font-weight: 400;
@@ -18,6 +54,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    margin-top: 54px;
     font-size: 20px;
     line-height: 30px;
   }

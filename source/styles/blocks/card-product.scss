@@ -1,30 +1,167 @@
 .card-product {
-  padding: 0 20px;
-  border-bottom: 1px black solid;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 140px 1fr;
+  row-gap: 17px;
+  padding: 20px 20px 24px;
+  border-bottom: 1px $special-grey solid;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+    background: linear-gradient(to bottom, $white, $white 81px, $basic-grey 81px, $basic-grey 100%);
+    padding: 10px 37px 40px;
+    border: none;
+
+    @media (min-width: $desktop) {
+      row-gap: 12px;
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
+
+  &--more {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 78px;
+    background: $white;
+
+    @media (min-width: $tablet) {
+      padding-top: 81px;
+    }
+  }
+
+  &--more::after,
+  &--more::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: #d3d3d3;
+  }
+
+  &--more::before {
+    top: 39px;
+    width: 30px;
+    height: 2px;
+
+    @media (min-width: $tablet) {
+      top: 162px;
+      width: 60px;
+    }
+  }
+
+  &--more::after {
+    top: 25px;
+    width: 2px;
+    height: 30px;
+
+    @media (min-width: $tablet) {
+      top: 132px;
+      height: 60px;
+    }
+  }
 }
 
 .card-product__link-img,
 .card-product__link-title {
+  display: block;
   text-decoration: none;
 }
 
+.card-product__text-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 21px;
+  }
+
+  &--more {
+    padding-bottom: 24px;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 39px;
+    }
+  }
+}
+
+.card-product__img {
+  margin: 0 auto;
+}
+
+.card-product__link-title {
+  align-self: start;
+
+  @media (min-width: $tablet) {
+    align-self: center;
+  }
+}
+
 .card-product__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  width: 76px;
   font-family: $font-secondary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: $special-dark-grey-2;
+  text-align: left;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 135px;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
   }
 
+
+  @media (min-width: $desktop) {
+    margin-bottom: 19px;
+  }
+
   &--more {
+    margin: 0;
+    width: 219px;
     color: $basic-darkgrey;
     text-align: center;
+
+    @media (min-width: $tablet) {
+      width: 134px;
+    }
+  }
+}
+
+.card-product__description-list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
+.card-product__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px #cdcdcd solid;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
 }
 
@@ -39,13 +176,54 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
 
-  &--more {
-    text-align: center;
+.card-product__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 160px;
+    padding-right: 37px;
+    padding-left: 37px;
+    border: 1px $basic-grey solid;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 150px;
+  }
+}
+
+.card-product__description-text--more {
+  margin-top: 8px;
+  margin-bottom: 21px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-top: 23px;
+    margin-bottom: 82px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 25px;
+    margin-bottom: 89px;
   }
 }
 
 .card-product__link-order {
+  grid-column: -1/1;
+  padding: 10px 50px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card-product__link-show-more {
+  width: 100%;
+  padding: 10px 30px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
