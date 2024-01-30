@@ -28,6 +28,10 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+
+  &:disabled + .checkbox__label {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__label::before {

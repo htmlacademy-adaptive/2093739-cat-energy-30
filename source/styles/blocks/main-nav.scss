@@ -79,6 +79,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 33px;
     justify-content: space-between;
     background: none;
@@ -98,7 +99,7 @@
 
   @media (min-width: $tablet) {
     .main-nav__item:last-child {
-    border-bottom: 1px #e6e6e6 solid;
+      border-bottom: 1px #e6e6e6 solid;
     }
   }
 
