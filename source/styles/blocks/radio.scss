@@ -1,5 +1,6 @@
 .radio {
   display: flex;
+  align-items: center;
 
   &:not(:first-child) {
     margin-top: 13px;

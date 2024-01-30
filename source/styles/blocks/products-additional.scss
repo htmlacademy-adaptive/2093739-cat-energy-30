@@ -80,7 +80,13 @@
     padding-right: 125px;
     padding-left: 77px;
     height: 200px;
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-tablet@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-tablet@2x.jpg") type("image/jpeg") 2x);
+    background-image:
+      linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/gift-background-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/gift-background-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/gift-background-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/gift-background-tablet@2x.jpg") type("image/jpeg") 2x);
   }
 
   @media (min-width: $desktop) {
@@ -89,7 +95,13 @@
     padding-left: 0;
     position: 0;
     height: 288px;
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/gift-background-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/gift-background-desktop@2x.jpg") type("image/jpeg") 2x);
+    background-image:
+      linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/gift-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/gift-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/gift-background-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/gift-background-desktop@2x.jpg") type("image/jpeg") 2x);
   }
 }
 
