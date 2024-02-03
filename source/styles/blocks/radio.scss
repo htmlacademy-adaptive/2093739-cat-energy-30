@@ -17,7 +17,14 @@
   border: 0;
   clip: rect(0 0 0 0);
 
+  &:focus + .radio__label,
+  &:focus-visible + .radio__label {
+    box-shadow: inset 0 0 0 1px $special-dark-grey;
+    outline: none;
+  }
+  
   &:disabled + .radio__label {
+    cursor: default;
     opacity: 0.3;
   }
 }
@@ -32,6 +39,10 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 60px;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 
   &:hover::before {

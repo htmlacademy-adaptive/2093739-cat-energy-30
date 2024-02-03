@@ -24,9 +24,11 @@
     }
 
     @media (min-width: $desktop) {
+      position: absolute;
       content: "";
       top: 0;
       left: 50%;
+      z-index: -1;
       background-image:
         linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         image-set(
@@ -34,6 +36,7 @@
           url("../../images/hero-background-desktop@2x.webp") type("image/webp") 2x,
           url("../../images/hero-background-desktop@1x.jpg") type("image/jpeg") 1x,
           url("../../images/hero-background-desktop@2x.jpg") type("image/jpeg") 2x);
+      background-repeat: no-repeat;
       background-color: $white;
       background-position: left top;
       width: 50%;
@@ -42,12 +45,16 @@
   }
 }
 
+
 .main-header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 13px;
   padding-bottom: 14px;
+
 
   @media (min-width: $tablet) {
     padding-top: 25px;

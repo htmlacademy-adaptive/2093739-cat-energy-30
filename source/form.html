@@ -100,13 +100,13 @@
             <h3 class="programm-choise-form__title title-section">Контактные данные (владельца кота)</h3>
             <div class="programm-choise-form__wrapper">
               <ul class="programm-choise-form__list programm-choise-form__list--contacts">
-                <li class="programm-choise-form__item text-input text-input--phone">
-                  <label class="programm-choise-form__label text-input__label text-input__label--email" for="email">E-mail:*</label>
+                <li class="programm-choise-form__item text-input text-input--email">
                   <input class="programm-choise-form__input text-input__input text-input__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <label class="programm-choise-form__label text-input__label text-input__label--email" for="email">E-mail:*</label>
                 </li>
-                <li class="programm-choise-form__item text-input">
-                  <label class="programm-choise-form__label text-input__label text-input__label--phone" for="phone">Телефон:*</label>
+                <li class="programm-choise-form__item text-input text-input--phone">
                   <input class="programm-choise-form__input text-input__input text-input__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <label class="programm-choise-form__label text-input__label text-input__label--phone" for="phone">Телефон:*</label>
                 </li>
               </ul>
             </div>
@@ -116,7 +116,8 @@
           <legend class="visually-hidden">Комментарий</legend>
             <div class="programm-choise-form__container programm-choise-form__container--textarea container">
               <h3 class="programm-choise-form__title title-section">Комментарий</h3>
-              <div class="programm-choise-form__wrapper programm-choise-form__wrapper--textarea">
+              <div class="programm-choise-form__wrapper programm-choise-form__wrapper--textarea text-input">
+                <label class="visually-hidden" for="comment">Расскажите о коте</label>
                 <textarea class="programm-choise-form__input text-input__input text-input__input--textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
