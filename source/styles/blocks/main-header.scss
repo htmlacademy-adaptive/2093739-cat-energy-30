@@ -2,8 +2,6 @@
   position: relative;
 
   &::before {
-<<<<<<< HEAD
-=======
     content: "";
     position: absolute;
     top: 65px;
@@ -25,7 +23,6 @@
       content: none;
     }
 
->>>>>>> 199ba376bf800673cdf16d3112eb299c0808a703
     @media (min-width: $desktop) {
       position: absolute;
       content: "";
