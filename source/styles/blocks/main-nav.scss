@@ -86,6 +86,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 33px;
     justify-content: space-between;
     background: none;

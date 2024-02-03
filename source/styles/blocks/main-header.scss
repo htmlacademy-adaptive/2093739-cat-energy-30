@@ -2,6 +2,30 @@
   position: relative;
 
   &::before {
+<<<<<<< HEAD
+=======
+    content: "";
+    position: absolute;
+    top: 65px;
+    background-image:
+      linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/hero-background-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/hero-background-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/hero-background-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/hero-background-mobile@2x.jpg") type("image/jpeg") 2x);
+    background-color: $special-dark-grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    width: 100%;
+    height: 302px;
+
+    @media (min-width: $tablet) {
+      content: none;
+    }
+
+>>>>>>> 199ba376bf800673cdf16d3112eb299c0808a703
     @media (min-width: $desktop) {
       position: absolute;
       content: "";

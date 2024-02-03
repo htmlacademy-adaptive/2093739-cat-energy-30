@@ -18,6 +18,7 @@
   }
 }
 
+
 .text-input--phone:first-child {
   @media (min-width: $desktop) {
     margin-bottom: 0;
@@ -25,7 +26,6 @@
 }
 
 .text-input__input {
-  position: relative;
   flex-grow: 1;
   padding: 13px 15px 12px;
   border: 1px #e7e7e7 solid;
@@ -96,7 +96,6 @@
   background-color: $special-dark-grey-2;
   margin-top: 1px;
 }
-
 
 .text-input__label--email::after {
   mask-image: url("../../images/icons/stack.svg#email");
