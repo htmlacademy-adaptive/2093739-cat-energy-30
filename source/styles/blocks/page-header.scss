@@ -17,11 +17,12 @@
 
   &--form {
     border-bottom: none;
-    padding-bottom: 66px;
+    padding-bottom: 39px;
 
     @media (min-width: $tablet) {
       padding-right: 70px;
       padding-left: 70px;
+      padding-bottom: 66px;
     }
 
     @media (min-width: $desktop) {
